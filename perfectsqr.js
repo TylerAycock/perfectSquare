@@ -3,11 +3,13 @@ const perfectSquare = (num)=>{
     if( answer - Math.floor(answer)!==0){
         return -1
     } else{
-        return((answer+1)*(answer+1))
+        return((answer+1)**2)
     }
 
 }
 
+const perfectOne = num => Number.isInteger(Math.sqrt(num))? (Math.sqrt(num+1)**2) : -1
+//a simple one liner to accomplish the same tast
 
 console.log(perfectSquare(9)) // should return 16 (3x3=9, 4x4=16)
 
